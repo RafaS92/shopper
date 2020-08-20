@@ -20,7 +20,7 @@ function Header() {
       </div>
 
       <div className="header_nav">
-        <Link to="/" className="header_link">
+        <Link to="/login" className="header_link">
           <div className="header_option">
             <span className="header_optionLineOne">Love u</span>
             <span className="header_optionLineTwo">hate u</span>
@@ -41,7 +41,7 @@ function Header() {
         <Link to="/checkout" className="header_link">
           <div className="header_optionBasket">
             <ShoppingBasketIcon />
-            <span>0</span>
+            <span className="header_optionLineTwo header_basketCount">0</span>
           </div>
         </Link>
       </div>
