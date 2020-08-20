@@ -18,7 +18,6 @@ function App() {
 
           <Route path="/">
             <Header />
-            <h1>Home page</h1>
           </Route>
         </Switch>
         return <div className="app">wue pedo</div>;
