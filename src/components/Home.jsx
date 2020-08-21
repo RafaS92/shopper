@@ -9,7 +9,7 @@ function Home() {
         className="home_image"
         // src="https://vapedille.com/wp-content/uploads/2020/01/sb45-um-demo.png"
         alt=""
-        src="https://img.freepik.com/free-psd/black-friday-banner-mockup-with-image_23-2147982242.jpg?size=626&ext=jpg"
+        src="https://ginabjorvig.com/portfolio/wp-content/uploads/2018/04/Argos_0118_M020-23_jansale_tech_desktop.jpg"
       />
 
       <div className="home_row">

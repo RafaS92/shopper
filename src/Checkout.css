@@ -1,10 +1,19 @@
 .checkout {
+  display: flex;
+  padding: 20px;
+  background-color: white;
+  height: max-content;
 }
 
 .checkout_img {
   width: 100%;
   object-fit: contain;
+  height: 400px;
   margin-bottom: 10px;
+  z-index: -1;
+  opacity: 1;
+  filter: contrast(130%);
+  margin-top: 0px;
 }
 .checkout_title {
   margin-right: 10px;
