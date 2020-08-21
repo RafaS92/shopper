@@ -14,7 +14,8 @@
 
 .product_info {
   height: 100px;
-  margin-bottom: 15px;
+  font-size: 17px;
+  font-weight: 600;
 }
 
 .product_price {
@@ -29,6 +30,7 @@
   max-height: 200px;
   width: 100%;
   object-fit: contain;
+  margin-top: 10px;
   margin-bottom: 15px;
 }
 
