@@ -11,13 +11,13 @@ function Checkout() {
       <div>
         <img
           className="checkout_img"
-          src="https://static.vecteezy.com/system/resources/previews/000/095/529/original/best-offer-sale-banner-vector.jpg"
+          src="https://cdn11.bigcommerce.com/s-utiov5b794/product_images/uploaded_images/blog13-sell-to-gainsaver.jpg"
         />
         {basket?.length === 0 ? (
           <div>
             <h2> Your Shopping Basket is empty</h2>
             <p>
-              You have no items in your basket. Please,dd items to your basket.
+              You have no items in your basket. Please,add items to your basket.
             </p>
           </div>
         ) : (
