@@ -1,39 +1,27 @@
 export const initialState = {
-  basket: [
-    {
-      id: "1234",
-      title: " adfafds f a dfa f adfa a faeraehaerhf aafajdkfsdfja afdja ja da",
-      price: 11.96,
-      rating: 5,
-      image:
-        "https://s1.eestatic.com/2020/03/11/como/Coronavirus-Enfermedades_infecciosas-Infecciones-Mascotas-Como_hacer_473964995_147985150_1024x576.jpg",
-    },
-    {
-      id: "1234",
-      title: " adfafds f a dfa f adfa a faeraehaerhf aafajdkfsdfja afdja ja da",
-      price: 11.96,
-      rating: 5,
-      image:
-        "https://s1.eestatic.com/2020/03/11/como/Coronavirus-Enfermedades_infecciosas-Infecciones-Mascotas-Como_hacer_473964995_147985150_1024x576.jpg",
-    },
-    {
-      id: "1234",
-      title: " adfafds f a dfa f adfa a faeraehaerhf aafajdkfsdfja afdja ja da",
-      price: 11.96,
-      rating: 5,
-      image:
-        "https://s1.eestatic.com/2020/03/11/como/Coronavirus-Enfermedades_infecciosas-Infecciones-Mascotas-Como_hacer_473964995_147985150_1024x576.jpg",
-    },
-  ],
+  basket: [],
 };
 
 const reducer = (state, action) => {
+  console.log(action);
   switch (action.type) {
     case "ADD_TO_BASKET":
       return { ...state, basket: [...state.basket, action.item] };
 
     case "REMOVE_FROM_BASKET":
-      return { state };
+      let newBasket = [...state.basket];
+
+      const index = state.basket.findIndex(
+        (basketItem) => basketItem.id === action.id
+      );
+
+      if (index >= 0) {
+        newBasket.splice(index, 1);
+      } else {
+        console.warn(`cant  (${action.id})`);
+      }
+
+      return { ...state, basket: newBasket };
 
     default:
       return state;

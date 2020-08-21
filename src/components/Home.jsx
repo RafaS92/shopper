@@ -14,14 +14,14 @@ function Home() {
 
       <div className="home_row">
         <Product
-          id="1234"
+          id="1111"
           title=" adfafds f a dfa f adfa a faeraehaerhf aafajdkfsdfja afdja ja da"
           price={11.96}
           rating={5}
           image="https://s1.eestatic.com/2020/03/11/como/Coronavirus-Enfermedades_infecciosas-Infecciones-Mascotas-Como_hacer_473964995_147985150_1024x576.jpg"
         />
         <Product
-          id="1234"
+          id="1112"
           title="perro"
           price={11.96}
           rating={5}
@@ -30,21 +30,21 @@ function Home() {
       </div>
       <div className="home_row">
         <Product
-          id="1234"
+          id="1113"
           title="perro"
           price={11.96}
           rating={5}
           image="https://s1.eestatic.com/2020/03/11/como/Coronavirus-Enfermedades_infecciosas-Infecciones-Mascotas-Como_hacer_473964995_147985150_1024x576.jpg"
         />
         <Product
-          id="1234"
+          id="1114"
           title="perro"
           price={11.96}
           rating={5}
           image="https://s1.eestatic.com/2020/03/11/como/Coronavirus-Enfermedades_infecciosas-Infecciones-Mascotas-Como_hacer_473964995_147985150_1024x576.jpg"
         />
         <Product
-          id="1234"
+          id="1115"
           title="perro"
           price={11.96}
           rating={5}
@@ -54,7 +54,7 @@ function Home() {
 
       <div className="home_row">
         <Product
-          id="1234"
+          id="1116"
           title="perro"
           price={11.96}
           rating={5}
