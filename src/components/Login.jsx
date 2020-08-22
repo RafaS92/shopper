@@ -41,7 +41,7 @@ function Login() {
       </Link>
 
       <div className="login_container">
-        <h1>Sign in</h1>
+        <h1 className="login_title">Sign in</h1>
         <form>
           <h5>E-mail</h5>
           <input
