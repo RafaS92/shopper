@@ -22,7 +22,8 @@
 
 .header_searchIcon {
   padding: 5px;
-  height: 22px !important;
+  border: none;
+  height: 32px !important;
   background-color: #fcc669;
 }
 
