@@ -30,6 +30,10 @@ function Login() {
     history.push("/");
   };
 
+  const backHome = (e) => {
+    history.push("/");
+  };
+
   return (
     <div className="login">
       <Link to="/">
@@ -62,6 +66,9 @@ function Login() {
         </p>
         <button onClick={register} className="login_signUpButton">
           Create your Shopper Account
+        </button>
+        <button onClick={backHome} className="login_back">
+          Back Home
         </button>
       </div>
     </div>

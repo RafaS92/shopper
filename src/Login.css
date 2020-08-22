@@ -10,7 +10,7 @@
 .login {
   height: 100vh;
   display: flex;
-  background-color: white;
+  background-color: rgba(224, 221, 221, 0.493);
   flex-direction: column;
   align-items: center;
 }
@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
-  border: 1px solid lightgray;
+  border: 1px solid rgb(0, 0, 0);
   justify-items: center;
 }
 
@@ -57,4 +57,8 @@
   border: 1px solid;
   margin-top: 10px;
   border-color: #a88734 #9c7e31 #846a29;
+}
+
+.login_back {
+  margin-top: 10px;
 }
