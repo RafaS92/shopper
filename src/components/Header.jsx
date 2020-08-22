@@ -7,7 +7,7 @@ import { useStateValue } from "../StateProvider";
 import { auth } from "../firebase";
 
 function Header() {
-  const [{ basket, user }, dispatch] = useStateValue();
+  const [{ basket, user }] = useStateValue();
 
   const login = () => {
     if (user) {
@@ -36,18 +36,7 @@ function Header() {
             </span>
           </div>
         </Link>
-        <Link to="/" className="header_link">
-          <div className="header_option">
-            <span className="header_optionLineOne">Return</span>
-            <span className="header_optionLineTwo">hate u</span>
-          </div>
-        </Link>
-        <Link to="/" className="header_link">
-          <div className="header_option">
-            <span className="header_optionLineOne">Prime</span>
-            <span className="header_optionLineTwo">hate u</span>
-          </div>
-        </Link>
+
         <Link to="/checkout" className="header_link">
           <div className="header_optionBasket">
             <ShoppingBasketIcon />

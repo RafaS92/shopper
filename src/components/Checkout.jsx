@@ -11,6 +11,7 @@ function Checkout() {
     <div className="checkout">
       <div className="checkout_left">
         <img
+          alt=""
           className="checkout_img"
           src="https://cdn11.bigcommerce.com/s-utiov5b794/product_images/uploaded_images/blog13-sell-to-gainsaver.jpg"
         />
