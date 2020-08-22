@@ -12,7 +12,7 @@
   object-fit: contain;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 18px;
+  margin-top: 2px;
 }
 
 .header_search {
@@ -22,8 +22,9 @@
 
 .header_searchIcon {
   padding: 5px;
-  height: 22px !important;
-  background-color: coral;
+  border: none;
+  height: 32px !important;
+  background-color: #fcc669;
 }
 
 .header_searchInput {

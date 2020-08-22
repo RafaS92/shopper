@@ -9,8 +9,8 @@
   height: 450px;
   object-fit: cover;
   z-index: -1;
-  margin-bottom: -130px;
-  mask-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.397));
+  margin-bottom: -135px;
+  mask-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.692));
   opacity: 1;
   filter: contrast(130%);
 }

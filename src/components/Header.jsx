@@ -11,15 +11,13 @@ function Header() {
   return (
     <nav className="header">
       <Link to="/">
-        <img
-          className="header_logo"
-          src="https://miro.medium.com/max/396/0*bVnfVVG7Y7qXQcO1"
-          alt=""
-        />
+        <img className="header_logo" src="../images/shopper.png" alt="" />
       </Link>
       <div className="header_search">
         <input type="text" className="header_searchInput" />
-        <SearchIcon className="header_searchIcon" />
+        <button className="header_searchIcon">
+          <SearchIcon />
+        </button>
       </div>
 
       <div className="header_nav">

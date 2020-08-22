@@ -8,7 +8,7 @@
   margin: 10px;
   padding: 20px;
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.993);
   z-index: 1;
 }
 
@@ -35,7 +35,10 @@
 }
 
 .product > button {
-  background-color: #f0c14b;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #38afd3;
   border: 1px solid;
   border-color: #a88734 #9c7e31 #846a29;
 }

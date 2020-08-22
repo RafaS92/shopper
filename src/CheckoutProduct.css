@@ -15,11 +15,13 @@
 }
 
 .checkoutProduct_info > button {
-  color: black;
-  background: #f0c14b;
   margin-top: 10px;
   border: 1px solid;
   border-color: #a88734 #9c7e31 #846a29;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #ee3a3a;
 }
 
 .checkoutProduct_rating {
