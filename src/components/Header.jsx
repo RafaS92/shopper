@@ -1,7 +1,6 @@
 import React from "react";
 import "../Header.css";
 import { Link } from "react-router-dom";
-import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import { useStateValue } from "../StateProvider";
 import { auth } from "../firebase";
@@ -17,15 +16,9 @@ function Header() {
 
   return (
     <nav className="header">
-      <Link to="/">
+      <a href={window.screenTop}>
         <img className="header_logo" src="../images/shopper.png" alt="" />
-      </Link>
-      <div className="header_search">
-        <input type="text" className="header_searchInput" />
-        <button className="header_searchIcon">
-          <SearchIcon />
-        </button>
-      </div>
+      </a>
 
       <div className="header_nav">
         <Link to={!user && "/login"} className="header_link">
@@ -37,14 +30,20 @@ function Header() {
           </div>
         </Link>
 
-        <Link to="/checkout" className="header_link">
-          <div className="header_optionBasket">
-            <ShoppingBasketIcon />
-            <span className="header_optionLineTwo header_basketCount">
-              {basket?.length}
-            </span>
-          </div>
-        </Link>
+        <div className="header_link">
+          {user ? (
+            <Link to="/checkout">
+              <div className="header_optionBasket">
+                <ShoppingBasketIcon />
+                <span className="header_optionLineTwo header_basketCount">
+                  {basket?.length}
+                </span>
+              </div>
+            </Link>
+          ) : (
+            <div className="header_optionBasket2">"Need to sign buy items"</div>
+          )}
+        </div>
       </div>
     </nav>
   );
