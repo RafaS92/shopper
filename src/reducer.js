@@ -30,6 +30,13 @@ const reducer = (state, action) => {
       }
 
       return { ...state, basket: newBasket };
+    case "REMOVE_ALL_FROM_BASKET":
+      let checkedBasket = [...state.basket];
+      let userCurrent = [state.user];
+
+      const empty = (checkedBasket) => (checkedBasket.length = 0);
+
+      return { userCurrent, empty };
 
     default:
       return state;

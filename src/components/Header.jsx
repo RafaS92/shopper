@@ -25,7 +25,9 @@ function Header() {
           <div onClick={login} className="header_option">
             <span className="header_optionLineOne">Hello {user?.email}</span>
             <span className="header_optionLineTwo">
-              {user ? "Sign Out" : "Sign In/Create account"}
+              {user || user === undefined
+                ? "Sign Out"
+                : "Sign In/Create account"}
             </span>
           </div>
         </Link>
