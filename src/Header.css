@@ -5,6 +5,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
+  justify-content: space-between;
 }
 
 .header_logo {
@@ -36,12 +37,12 @@
 
 .header_nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-items: right;
 }
 
 .header_link {
-  color: white;
   text-decoration: none;
+  color: white !important;
 }
 
 .header_option {
@@ -60,6 +61,16 @@
   display: flex;
   align-items: center;
   margin-left: 20px;
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.header_optionBasket2 {
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+  margin-left: 25px;
+  margin-right: 10px;
 }
 
 .header_basketCount {
