@@ -14,6 +14,10 @@ function Subtotal() {
     dispatch({
       type: "REMOVE_ALL_FROM_BASKET",
     });
+
+    setTimeout(() => window.location.reload(), 4600);
+
+    notify();
   };
 
   const notify = () =>
@@ -47,7 +51,7 @@ function Subtotal() {
         prefix={"$"}
       />
       <ToastContainer />
-      <button onClick={removeall}> Proceed to Checkout</button>
+      <button onClick={removeall}>Proceed to Checkout</button>
     </div>
   );
 }
