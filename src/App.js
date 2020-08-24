@@ -7,6 +7,8 @@ import "./App.css";
 import Login from "./components/Login";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
+import ScrollToTop from "./ScrollToTop";
+import Register from "./components/Register";
 
 function App() {
   const [, dispatch] = useStateValue();
@@ -32,25 +34,19 @@ function App() {
   }, [dispatch]);
 
   return (
-    <Router>
-      <div className="app">
+    <div className="app">
+      <Router>
+        <ScrollToTop />
+        <Header />
         <Switch>
-          <Route path="/checkout">
-            <Header />
-            <Checkout />
-          </Route>
+          <Route path="/checkout" component={Checkout} />
+          <Route path="/register" component={Register} />
+          <Route path="/login" component={Login} />
 
-          <Route path="/login">
-            <Login />
-          </Route>
-
-          <Route path="/">
-            <Header />
-            <Home />
-          </Route>
+          <Route path="/" component={Home} />
         </Switch>
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 
