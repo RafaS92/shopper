@@ -17,7 +17,19 @@
 }
 .checkout_title {
   margin-right: 10px;
-
   object-fit: contain;
   margin-bottom: 10px;
+}
+
+.link_t {
+  color: rgb(254, 255, 255);
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #38afd3;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 550;
+  margin-left: 60%;
+  border: 2px solid rgb(0, 0, 0);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }

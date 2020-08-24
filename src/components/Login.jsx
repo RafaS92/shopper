@@ -25,10 +25,11 @@ function Login() {
 
     auth
       .createUserWithEmailAndPassword(email, password)
-      .then((auth) => {})
+      .then((auth) => {
+        history.push("/register");
+      })
 
       .catch((e) => alert(e.message));
-    history.push("/register");
   };
 
   const backHome = (e) => {
@@ -42,7 +43,7 @@ function Login() {
       </Link>
 
       <div className="login_container">
-        <h1 className="login_title">Sign in</h1>
+        <h1 className="login_title">Login</h1>
         <form>
           <h5>E-mail</h5>
           <input
@@ -64,7 +65,7 @@ function Login() {
             Create Shopper Account
           </button>
           <button onClick={login} type="submit" className="login_signInButton">
-            Sign In
+            Login
           </button>
         </form>
         <p>

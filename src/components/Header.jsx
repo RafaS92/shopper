@@ -15,13 +15,13 @@ function Header() {
   };
 
   return (
-    <nav className="header">
-      <a href={window.screenTop}>
+    <nav className="header" id="top">
+      <Link to="/">
         <img className="header_logo" src="../images/shopper.png" alt="" />
-      </a>
+      </Link>
 
       <div className="header_nav">
-        <Link to={!user && "/login"} className="header_link">
+        <Link to={!user ? "/login" : ""} className="header_link">
           <div onClick={login} className="header_option">
             <span className="header_optionLineOne">Hello {user?.email}</span>
             <span className="header_optionLineTwo">
@@ -30,7 +30,7 @@ function Header() {
           </div>
         </Link>
 
-        <div className="header_link">
+        <div className="header_link ">
           {user ? (
             <Link to="/checkout">
               <div className="header_optionBasket">
