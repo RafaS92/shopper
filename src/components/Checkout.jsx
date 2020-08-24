@@ -1,15 +1,14 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useStateValue } from "../StateProvider";
 import "../Checkout.css";
 import CheckoutProduct from "./CheckoutProduct";
 import Subtotal from "./Subtotal";
-import { useLocation } from "react-router-dom";
 
 function Checkout() {
   const [{ basket }] = useStateValue();
 
   return (
-    <div className="checkout" id="start">
+    <div className="checkout">
       <div className="checkout_left">
         <img
           alt=""
@@ -35,6 +34,13 @@ function Checkout() {
                 rating={item.rating}
               />
             ))}
+            {basket?.length > 0 ? (
+              <a className="link_t" href="#top">
+                Subtotal
+              </a>
+            ) : (
+              ""
+            )}
           </div>
         )}
       </div>

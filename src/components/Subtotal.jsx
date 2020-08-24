@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import CurrencyFormat from "react-currency-format";
 import { useStateValue } from "../StateProvider";
 import "../Subtotal.css";
@@ -7,17 +8,21 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function Subtotal() {
-  const [{ basket, user }, dispatch] = useStateValue();
-  console.log(user);
+  const [{ basket }, dispatch] = useStateValue();
+  const history = useHistory();
 
   const removeall = () => {
     dispatch({
       type: "REMOVE_ALL_FROM_BASKET",
     });
 
-    setTimeout(() => window.location.reload(), 4600);
+    setTimeout(() => window.location.reload(), 4500);
 
     notify();
+  };
+
+  const backHome = (e) => {
+    history.push("/");
   };
 
   const notify = () =>
@@ -52,6 +57,11 @@ function Subtotal() {
       />
       <ToastContainer />
       <button onClick={removeall}>Proceed to Checkout</button>
+      <div>
+        <button onClick={backHome} className="login_back">
+          Back Home
+        </button>
+      </div>
     </div>
   );
 }

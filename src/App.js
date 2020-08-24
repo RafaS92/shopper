@@ -7,7 +7,7 @@ import "./App.css";
 import Login from "./components/Login";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
-import ScrollToTop from "./ScrollToTop";
+import ScrollToTop from "./components/ScrollToTop";
 import Register from "./components/Register";
 
 function App() {
@@ -37,13 +37,24 @@ function App() {
     <div className="app">
       <Router>
         <ScrollToTop />
-        <Header />
         <Switch>
-          <Route path="/checkout" component={Checkout} />
-          <Route path="/register" component={Register} />
-          <Route path="/login" component={Login} />
+          <Route path="/checkout">
+            <Header />
+            <Checkout />
+          </Route>
 
-          <Route path="/" component={Home} />
+          <Route path="/register">
+            <Register />
+          </Route>
+
+          <Route path="/login">
+            <Login />
+          </Route>
+
+          <Route path="/">
+            <Header />
+            <Home />
+          </Route>
         </Switch>
       </Router>
     </div>
