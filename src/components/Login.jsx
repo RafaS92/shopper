@@ -26,8 +26,9 @@ function Login() {
     auth
       .createUserWithEmailAndPassword(email, password)
       .then((auth) => {})
+
       .catch((e) => alert(e.message));
-    history.push("/");
+    history.push("/register");
   };
 
   const backHome = (e) => {
@@ -55,18 +56,22 @@ function Login() {
             onChange={(event) => setPassword(event.target.value)}
             value={password}
           />
+          <button
+            onClick={register}
+            disabled={email && password.length > 6 ? false : true}
+            className="login_signUpButton"
+          >
+            Create Shopper Account
+          </button>
           <button onClick={login} type="submit" className="login_signInButton">
             Sign In
           </button>
         </form>
         <p>
-          By signing-in you agree to Shopper's Conditions of Use & Sale. Please
-          see our Privacy Notice, our Cookies Notice and our Interest-Based Ads
-          Notice.
+          By creating a Shopper account you agree to Shopper's Conditions of Use
+          & Sale. Please see our Privacy Notice, our Cookies Notice and our
+          Interest-Based Ads Notice.
         </p>
-        <button onClick={register} className="login_signUpButton">
-          Create your Shopper Account
-        </button>
         <button onClick={backHome} className="login_back">
           Back Home
         </button>

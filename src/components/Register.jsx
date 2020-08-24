@@ -1,7 +1,14 @@
 import React from "react";
 import "../Register.css";
+import { useHistory } from "react-router-dom";
 
 function Register() {
+  const history = useHistory();
+
+  const registeredSubmit = () => {
+    history.push("/");
+  };
+
   return (
     <div>
       <form className="register_container">
@@ -86,7 +93,6 @@ function Register() {
                 type="text"
                 className="form-control "
                 id="cname"
-                // placeholder="Name On Card"
                 name="cardname"
                 required
               />
@@ -110,7 +116,6 @@ function Register() {
                   type="text"
                   className="form-control"
                   id="expd"
-                  // placeholder="03/09"
                   aria-describedby="inputGroupPrepend2"
                   name="expirationd"
                   required
@@ -149,7 +154,10 @@ function Register() {
               </div>
             </div>
           </div>
-          <button className="register_button">Submit</button>
+
+          <button className="register_button" onClick={registeredSubmit}>
+            Submit
+          </button>
         </div>
       </form>
     </div>

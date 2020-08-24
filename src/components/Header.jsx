@@ -41,7 +41,9 @@ function Header() {
               </div>
             </Link>
           ) : (
-            <div className="header_optionBasket2">"Need to sign buy items"</div>
+            <div className="header_optionBasket2">
+              "You need to sign in to buy items"
+            </div>
           )}
         </div>
       </div>

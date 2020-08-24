@@ -9,7 +9,7 @@ function Checkout() {
   const [{ basket }] = useStateValue();
 
   return (
-    <div className="checkout">
+    <div className="checkout" id="start">
       <div className="checkout_left">
         <img
           alt=""
