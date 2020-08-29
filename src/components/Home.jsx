@@ -5,11 +5,7 @@ import "../Home.css";
 function Home() {
   return (
     <div className="home">
-      <img
-        className="home_image"
-        alt=""
-        src="https://ginabjorvig.com/portfolio/wp-content/uploads/2018/04/Argos_0118_M020-23_jansale_tech_desktop.jpg"
-      />
+      <img className="home_image" alt="" src="/images/shopperBanner.jpg" />
 
       <div className="home_row" id="home">
         <Product
