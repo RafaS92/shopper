@@ -10,7 +10,7 @@
 .login {
   height: 100vh;
   display: flex;
-  background-color: rgba(224, 221, 221, 0.493);
+  background-color: rgb(255, 255, 255);
   flex-direction: column;
   align-items: center;
 }
@@ -19,6 +19,7 @@
   width: 300px;
   display: flex;
   flex-direction: column;
+  background-color: rgba(228, 228, 228, 0.74);
   padding: 20px;
   border: 1px solid rgb(0, 0, 0);
   justify-items: center;
